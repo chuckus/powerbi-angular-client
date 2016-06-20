@@ -1,5 +1,5 @@
-import { ReportsService } from '../services/reports.js';
-import Utilities from '../services/utilities.js';
+import { ReportsService } from '../services/reports';
+import Utilities from '../services/utilities';
 import * as pbi from 'angular-powerbi';
 
 export default class controller {

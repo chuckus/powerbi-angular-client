@@ -1,8 +1,8 @@
 SystemJS.config({
   baseURL: "/",
   paths: {
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*",
-    "powerbi-sample-client-angular/": "app/"
+    "powerbi-sample-client-angular/": "app/",
+    "github:": "jspm_packages/github/",
+    "npm:": "jspm_packages/npm/"
   }
 });

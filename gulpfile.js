@@ -36,7 +36,7 @@ gulp.task('build:js', function() {
 gulp.task('compile:app', function () {
     var tsProject = $.typescript.createProject('tsconfig.json');
     
-    var tsResult = gulp.src(['typings/browser/**/*.d.ts', './app/**/*.ts'])
+    var tsResult = gulp.src(['typings/globals/**/*.d.ts', './app/**/*.ts'])
         .pipe($.typescript(tsProject))
         ;
         

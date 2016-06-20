@@ -1,4 +1,16 @@
 SystemJS.config({
+  devConfig: {
+    "map": {
+      "plugin-typescript": "github:frankwallis/plugin-typescript@4.0.5"
+    },
+    "packages": {
+      "github:frankwallis/plugin-typescript@4.0.5": {
+        "map": {
+          "typescript": "npm:typescript@1.8.9"
+        }
+      }
+    }
+  },
   transpiler: "plugin-typescript",
   packages: {
     "powerbi-sample-client-angular": {
@@ -24,7 +36,6 @@ SystemJS.config({
     "angular-ui-router": "github:angular-ui/ui-router@0.2.18",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "os": "github:jspm/nodelibs-os@0.2.0-alpha",
-    "plugin-typescript": "github:frankwallis/plugin-typescript@4.0.5",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha"
   },
   packages: {
@@ -42,11 +53,6 @@ SystemJS.config({
     "github:angular-ui/ui-router@0.2.18": {
       "map": {
         "angular": "github:angular/bower-angular@1.5.3"
-      }
-    },
-    "github:frankwallis/plugin-typescript@4.0.5": {
-      "map": {
-        "typescript": "npm:typescript@1.8.9"
       }
     },
     "github:jspm/nodelibs-os@0.2.0-alpha": {

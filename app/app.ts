@@ -7,13 +7,13 @@ console.log(angularuirouter);
 console.log(angularpowerbi);
 
 // Services
-import reportsProvider from './services/reports.js';
-import Utilities from './services/utilities.js';
+import reportsProvider from './services/reports';
+import Utilities from './services/utilities';
 
 // Pods
-import { controller as applicationController, route as applicationRoute } from './application/module.js';
-import { controller as scenario1Controller, route as scenario1Route } from './scenario1/module.js';
-import { controller as scenario2Controller, route as scenario2Route } from './scenario2/module.js';
+import { controller as applicationController, route as applicationRoute } from './application/module';
+import { controller as scenario1Controller, route as scenario1Route } from './scenario1/module';
+import { controller as scenario2Controller, route as scenario2Route } from './scenario2/module';
 
 // Config
 config['$inject'] = ["$stateProvider", "$urlRouterProvider", "ReportsServiceProvider"];

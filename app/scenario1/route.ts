@@ -1,4 +1,4 @@
-import { ReportsService } from '../services/reports.js';
+import { ReportsService } from '../services/reports';
 
 const modelResolver = (ReportsService: ReportsService): ng.IPromise<PowerBi.IReport> => {
     return ReportsService.findById('5dac7a4a-4452-46b3-99f6-a25915e0fe55');
